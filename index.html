@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="to-center">
+        <p>NBA Fantasy 2014-2024</p>
+    </header>
+    <div class="to-center h">
+        <p>My Fantasy Team</p>
+    </div>
+    <div class="players-container">
+        <div class="player vertical-flex" id="PG">
+            <div class="position">Point Guard</div>
+            <div class="name">name: empty</div>
+            <div class="grade">Three Precent: </div>
+            <div class="grade">Two Precent: </div>
+            <div class="grade">Points: </div>
+        </div>
+        <div class="player vertical-flex" id="SG">
+            <div class="position">Shooting Guard</div>
+            <div class="name">name: empty</div>
+            <div class="grade">Three Precent: </div>
+            <div class="grade">Two Precent: </div>
+            <div class="grade">Points: </div>
+        </div>
+        <div class="player vertical-flex" id="SF">
+            <div class="position">Small Forward</div>
+            <div class="name">name: empty</div>
+            <div class="grade">Three Precent: </div>
+            <div class="grade">Two Precent: </div>
+            <div class="grade">Points: </div>
+        </div>
+        <div class="player vertical-flex" id="PF">
+            <div class="position">Power Forward</div>
+            <div class="name">name: empty</div>
+            <div class="grade">Three Precent: </div>
+            <div class="grade">Two Precent: </div>
+            <div class="grade">Points: </div>
+        </div>
+        <div class="player vertical-flex" id="C">
+            <div class="position">Center</div>
+            <div class="name">name: empty</div>
+            <div class="grade">Three Precent: </div>
+            <div class="grade">Two Precent: </div>
+            <div class="grade">Points: </div>
+        </div>
+    </div>
+    <div class="to-center h"><p>NBA Player Search</p></div>
+    <div class="to-center">
+    <div class="form-table-container vertical-flex">
+        <form action="" class="vertical-flex">
+            <select name="position" id="search-position" >
+                <option value="PG">PG</option>
+                <option value="SG">SG</option>
+                <option value="SF">SF</option>
+                <option value="PF">PF</option>
+                <option value="C">C</option>
+            </select>
+            <input type="range" name="points" min="0" max="20000" id="points" 
+            onchange="this.setAttribute('value',this.value);"> 
+            <input type="range" name="two-precent" min="0" max="100"  id="two-precent"
+            onchange="this.setAttribute('value',this.value);">
+            <input type="range" name="three-precent" min="0" max="100" id="three-precent"
+            onchange="this.setAttribute('value',this.value);">
+            <button id="submit">Search Player</button>
+        </form>
+        
+    
+        
+        <table id="players-table">
+            <thead>
+                <tr>
+                <th scope="col">Player</th>
+                <th scope="col">Position</th>
+                <th scope="col">Points</th>
+                <th scope="col">%FG</th>
+                <th scope="col">%3P</th>
+                <th scope="col">Action</th>
+                </tr>
+                
+            </thead>
+        </table>
+    </div>
+    </div>
+
+    <script src="./dest/script.js"></script>
+</body>
+</html>

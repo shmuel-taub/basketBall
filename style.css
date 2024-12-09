@@ -1,0 +1,110 @@
+ :root {
+    --slots-bg-color: rgb(237, 208, 212, 0.5);
+  }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.to-center {
+    display: flex;
+    justify-content: center;
+}
+
+.h {
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.player {
+    min-height: 150px;
+    min-width:  120px;
+    
+    background-color: var(--slots-bg-color);
+    border-radius: 5px;
+}
+
+.name {
+    font-size: medium;
+}
+.position {
+    color: blue;
+}
+
+
+
+form {
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.form-table-container {
+    background-color: var(--slots-bg-color);
+    width: 60%;
+}
+
+input[type=range]::before{
+    content: attr(value);
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+
+input[type="range"], select {
+    width: 90%;
+}
+
+button {
+    color: white;
+    background: blue;
+    width: 90px;
+
+}
+
+
+
+
+table {
+    min-width: 400px;
+    background-color: var(--slots-bg-color);
+}  
+
+thead {
+    background-color: rgb(230, 30, 30);
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse:collapse;
+    padding: 10px;
+}
+
+
+
+
+
+
